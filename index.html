@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAF Logistics</title>
+    <link rel="stylesheet" href="static/css/style.css" media="screen">
+    <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="static/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h2>FAF</h2>
+    </header>
+    <section>
+        <nav>
+            <li class="tab current_tab" data-action="home">HOME</li>
+            <li class="tab" data-action="pledge">PLEDGE</li>
+            <li class="tab" data-action="payment">PAYMENT</li>
+            <li class="tab" data-action="help">HELP</li>
+        </nav>
+        <article class="home">
+            <h3>NOTICE</h3>
+            <p><h4 class="notice">Matching is ongoig now, please for every pledge, pay
+        your GHC 15.00 to the merchant account number:
+        0549643215 (FAF Logistics). Your account will be blocked in you
+        place a pledge without paying your GHC 15.00</h4></p>
+            <h2 class="how">How it works/Rules</h2>
+            <p>
+            <ol type="1">
+                <li class="rule"><h4>This is a peer-to-peer financial system to help each
+                other. If a user abuses the system in any way, his or her
+                    account will be banned.
+                </h4></li>
+                <li class="rule"><h4>Please make sure you have the amount that you are
+                pledging. Your account will be banned if the person you
+                    are to pay doesn't get payment and decides to purge you.
+                </h4></li>
+                <li class="rule"><h4>If you dont confirm someone immediately you receive their
+                    payment, your account will be deleted and banned.
+                </h4></li>
+            </ol>
+            </p>
+        </article>
+        <article class="pledge">
+            <h3>How much do you want to pledge?</h3>
+            <select onchange="cal_reward()">
+                <option selected>GHC 20.00</option>
+                <option>GHC 50.00</option>
+                <option>GHC 80.00</option>
+                <option>GHC 100.00</option>
+            </select>
+            <h5>Reward: <span id="reward"></span></h5>
+            <button>PLEDGE</button>
+            <div id="paymentid">
+                PayID: <span id="payid"></span>
+            </div>
+            <div id="pledgers">You do not have any pledgers now.
+            Click on the pledge button above to pledge.</div>
+        </article>
+    </section>
+</body>
+</html>

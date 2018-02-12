@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+a,a:link,a:focus {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(#0000CD, #00008B);
+    width: 100%;
+    height: 3em;
+    font-size: 16px;
+}
+
+header h2 {
+    line-height: 2em;
+    color: GhostWhite;
+    font-family: monospace;
+    text-shadow: 1px 1px 1px Navy;
+    padding-left: 5px;
+}
+
+nav {
+    background: #333;
+    text-align: center;
+    height: 2em;
+    width: 98%;
+    margin: 5px auto;
+}
+
+.tab {
+    list-style: none;
+    border-right: 1px solid grey;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 2em;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+}
+
+.tab:last-child {
+    border-right: 0;
+}
+
+.current_tab {
+    background: #4CAF50;
+}
+
+article {
+    display: none;
+    width: 98%;
+    font-family: cursive;
+    border: 1px solid gainsboro;
+    margin: 5px auto;
+    background: linear-gradient(#222, #333);
+    color: white;
+}
+
+article.home {
+    display: block;
+}
+
+article h2 {
+    border-top: 1px dashed whiteSmoke;
+    border-bottom: 3px solid whiteSmoke;
+}
+
+.how {
+    text-align: center;
+    background: white;
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+article h3 {
+    height: 1.5em;
+    background: white;
+    color: black;
+    line-height: 1.5em;
+    padding-left: 5px;
+    font-family: fantasy;
+    text-shadow: 1px 1px 1px white;
+}
+
+article p {
+    padding-bottom: 5px;
+}
+
+article h4 {
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 3px;
+    text-shadow: 1px 1px 1px black;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h4.notice {
+    font-family: monospace;
+    text-align: justify;
+}
+
+li.rule {
+    margin-left: 20px;
+    color: GhostWhite;
+    text-shadow: 1px 1px 1px green;
+}
+
+select, button {
+    display: block;
+    margin: 5px auto;
+    width: 98%;
+    height: 3em;
+    font-weight: bolder;
+    font-size: 1.2em;
+    border: 0;
+    border: 1px solid black;
+}
+
+select {
+    background: #333;
+    border-radius: 5px;
+    color: red;
+}
+
+button {
+    background: linear-gradient(#222,#333);
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+h5 {
+    float: right;
+    font-size: 1.1em;
+    font-family: roboto;
+    text-decoration: italics;
+    padding: 5px;
+    color: yellow;
+}
