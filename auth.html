@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FAF Logistics</title>
+    <link rel="stylesheet" href="static/css/auth.css" media="screen">
+    <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="static/js/sha512.min.js"></script>
+    <script type="text/javascript" src="static/js/auth.js"></script>
+</head>
+<body>
+    <header>
+        <img class="app-icon" src="static/images/favicon.png"/>
+        <h2>Sikafie</h2>
+    </header>
+    <section>
+        <article class="login-page">
+            <h4 class="error login"></h4>
+            <input class="log-phonenumber" type="tel" placeholder="phonenumber"/>
+            <input class="login-password" type="password" placeholder="password"/>
+            <input class="login-button" type="button" value="login"/>
+            <h3>Not a member yet? Click <a href="register-page">here</a> to register.</h3>
+        </article>
+        <article class="register-page" style="display: none">
+            <h4 class="error register"></h4>
+            <input class="fullname" type="text" placeholder="Full Name"/>
+            <input class="reg-phonenumber" type="tel" placeholder="phonenumber"/>
+            <input class="register-password" type="password" placeholder="password"/>
+            <input class="confirm-password" type="password" placeholder="confirm password"/>
+            <input class="register-button" type="button" value="register"/>
+            <h3>Already a member? Click <a href="login-page">here</a> to login.</h3>
+        </article>
+    </section>
+</body>
+</html>

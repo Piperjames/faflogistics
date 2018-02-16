@@ -14,140 +14,279 @@ a,a:link,a:focus {
 }
 
 header {
-    background: linear-gradient(#0000CD, #00008B);
-    width: 100%;
-    height: 3em;
-    font-size: 16px;
+    width: 97%;
+    background: linear-gradient(#222, #333);
+    margin: 5px auto;
+    box-shadow: 1px 1px 1px black;
+}
+
+
+header img {
+    width: 10%;
+    height: auto;
 }
 
 header h2 {
-    line-height: 2em;
-    color: GhostWhite;
+    color: white;
     font-family: monospace;
-    text-shadow: 1px 1px 1px Navy;
-    padding-left: 5px;
+    font-size: 1em;
+    text-transform: uppercase;
+
 }
+
+header > * {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
 
 nav {
-    background: #333;
-    text-align: center;
-    height: 2em;
-    width: 98%;
+    width: 97%;
     margin: 5px auto;
-}
-
-.tab {
-    list-style: none;
-    border-right: 1px solid grey;
-    float: left;
-    padding-left: 5px;
-    padding-right: 5px;
-    line-height: 2em;
-    cursor: pointer;
     text-align: center;
+}
+
+div.tab {
+    display: inline-block;
+    width: 30%;
+    background: linear-gradient(#222,#333);
+    box-shadow: 1px 1px 1px grey;
+    margin: 5px;
     color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 7%;
+    cursor: pointer;
+    border: 1px solid grey;
 }
 
-.tab:last-child {
-    border-right: 0;
+.tab h1 {
+    font-size: 100%;
 }
 
-.current_tab {
-    background: #4CAF50;
+
+img.tabimg {
+    width: 50%;
+    height: 10%;
 }
 
 article {
     display: none;
-    width: 98%;
-    font-family: cursive;
-    border: 1px solid gainsboro;
+    width: 97%;
+    border: 1px solid grey;
     margin: 5px auto;
-    background: linear-gradient(#222, #333);
-    color: white;
-}
-
-article.home {
-    display: block;
-}
-
-article h2 {
-    border-top: 1px dashed whiteSmoke;
-    border-bottom: 3px solid whiteSmoke;
 }
 
 .how {
-    text-align: center;
-    background: white;
-    color: black;
-    text-shadow: 1px 1px 1px white;
-}
-
-article h3 {
-    height: 1.5em;
-    background: white;
-    color: black;
-    line-height: 1.5em;
-    padding-left: 5px;
-    font-family: fantasy;
-    text-shadow: 1px 1px 1px white;
-}
-
-article p {
-    padding-bottom: 5px;
-}
-
-article h4 {
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-bottom: 3px;
-    text-shadow: 1px 1px 1px black;
-}
-
-h4 {
-    font-size: 1rem;
-}
-
-h4.notice {
+    box-shadow: 1px 1px 1px grey;
+    border: 1px solid grey;
     font-family: monospace;
-    text-align: justify;
 }
 
-li.rule {
-    margin-left: 20px;
-    color: GhostWhite;
-    text-shadow: 1px 1px 1px green;
+.how h3 {
+    background: linear-gradient(blue, Navy);
+    color: white;
 }
 
-select, button {
+.rule {
+    color: #222;
+    margin-left: 25px;
+    padding: 5px;
+    font-size: 0.9em;
+    background: whiteSmoke;
+    font-weight: bold;
+}
+
+.how, .notice {
+    width: 90%;
     display: block;
     margin: 5px auto;
-    width: 98%;
-    height: 3em;
-    font-weight: bolder;
+    color: white;
+}
+
+.notice {
+    background: linear-gradient(#222,#333);
+    box-shadow: 1px 1px 1px grey;
+    text-shadow: 1px 1px 1px black;
+    border: 1px solid grey;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+h3 {
     font-size: 1.2em;
-    border: 0;
-    border: 1px solid black;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+.notice h3 {
+    background: linear-gradient(orange, yellow);
+    color: white;
+}
+
+.notice h4 {
+    font-size: 0.8em;
+    padding: 5px;
+    font-family: monospace;
+    text-align: justify;
+    color: black;
+    background: linear-gradient(whiteSmoke,GhostWhite);
+    text-shadow: 1px 1px 1px white;
+}
+
+.tooltab {
+    width: 100%;
+    background: linear-gradient(#333, #444);
+}
+
+.tooltab img {
+    width: 5%;
+    height: auto;
+}
+
+.tooltab h4 {
+    color: white;
+    font-family: monospace;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+
+.tooltab > * {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+img.close {
+    float: right;
+    cursor: pointer;
+}
+
+img.close:hover {
+    filter: invert(60%);
+    -webkit-filter: invert(60%);
+}
+
+.pledge-button {
+    width: 30%;
+    background: #008CBA;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    float: right;
+}
+
+.pledge-button:hover {
+    background: white;
+    color: #008CBA;
+    border: 2px solid #008CBA;
 }
 
 select {
-    background: #333;
-    border-radius: 5px;
-    color: red;
+    background: #e7e7e7;
+    width: 62%;
+    color: blue;
 }
 
-button {
-    background: linear-gradient(#222,#333);
-    box-shadow: 1px 1px 1px black;
-    cursor: pointer;
-    color: white;
-    text-shadow: 1px 1px 1px black;
+select, .pledge-button {
+    font-family: monospace;
+    font-size: 1em;
+    height: 3em;
+    margin: 5px;
+    text-align: center;
+    border: none;
 }
 
-h5 {
-    float: right;
-    font-size: 1.1em;
-    font-family: roboto;
-    text-decoration: italics;
+.reward {
+    color: brown;
     padding: 5px;
-    color: yellow;
+    font-size: 80%;
+    font-family: monospace;
 }
+
+.paymentid {
+    float: right;
+    padding-right: 10px;
+    color: red;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 80%;
+}
+
+.reward, .paymentid {
+    display: inline-block;
+}
+
+#pledgers {
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial;
+}
+
+h5.pending {
+    padding: 7px;
+    font-size: 1em;
+    background: linear-gradient(#eee,#ddd);
+    color: #222;
+    text-align: center;
+    font-family: Arial;
+}
+
+.confirm-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 30%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    margin: 5px;
+}
+
+.confirm-button:hover {
+    background: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.confirm {
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial;
+}
+
+.confirm span {
+    color: #4CAF50;
+}
+
+input.transact {
+    margin: 5px;
+    width: 60%;
+    padding: 15px 0;
+    background-color: #4CAF50;
+    border: none;
+    text-align: center;
+}
+
+select.received {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+
+}
+

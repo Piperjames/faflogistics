@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    background: #dadada;
+}
+
+header {
+    width: 20%;
+    display: block;
+    margin: 10% auto;
+}
+
+header h2 {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1em;
+    color: #38ad32;
+    text-align: center;
+}
+
+img.app-icon {
+    width: 100%;
+    height: auto;
+}
+
+article {
+    width: 90%;
+    display: block;
+    margin: 1% auto;
+}
+
+article.login-page {
+    margin: 2% auto;
+}
+
+input {
+    margin: 2% 0;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+}
+
+input[type='tel'], input[type='password'], input[type='button'], input[type='text'] {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.login-button {
+    background: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    background: white;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+}
+
+article h3 {
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.register-button {
+    background: #008CBA;
+    color: white;
+    text-transform: uppercase;
+}
+
+.register-button:hover {
+    background: white;
+    color: #008CBA;
+    border: 2px solid #008CBA;
+}
+
+article h4 {
+    color: red;
+    font-size: 1em;
+    padding: 5px;
+    text-align: center;
+    font-family: monospace;
+}
