@@ -8,108 +8,125 @@
     <link rel="shortcut icon" href="static/images/favicon.ico" type="image/x-icon" />
     <script type="text/javascript" src="static/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="static/js/script.js"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
     <script type="text/javascript" src="static/js/sha512.min.js"></script>
 </head>
 <body>
     <header>
-        <img class="propic" src="static/images/propic.png"/>
-        <h2>Profile Name</h2>
+        <!-- <img class="propic" src="static/images/propic.png"/> -->
+        <h2></h2>
+        <img class="logout-button" src="static/images/logout.png"/>
     </header>
-    <nav>
-        <div class="tab current_tab" data-action="home">
-            <img class="tabimg" src="static/images/home.png"/>
-            <h1>HOME</h1>
-        </div>
-        <div class="tab" data-action="pledge">
-            <img class="tabimg" src="static/images/pledge.png"/>
-            <h1>PLEDGE</h1>
-        </div>
-        <div class="tab" data-action="payment">
-            <img class="tabimg" src="static/images/payment.png"/>
-            <h1>PAYMENT</h1>
-        </div>
-        <div class="tab" data-action="help">
-            <img class="tabimg" src="static/images/help.png"/>
-            <h1>HELP</h1>
-        </div>
-    </nav>
+
     <section>
-        <article class="home">
+        <article class="home" style="display: block;">
             <div class="tooltab">
                 <img class="pageimg" src="static/images/home.png"/>
                 <h4>Home</h4>
-                <img class="close" src="static/images/back.png"/>
             </div>
             <div class="how">
-                <h3>How it works/Rules</h3>
+                <h3>SYSTEM RULES</h3>
                 <ol type="1">
-                    <li class="rule">This is a peer-to-peer financial system to help each
-                    other. If a user abuses the system in any way, his or her
-                    account will be banned.
+                    <li class="rule">This system financially helps individuals to attain
+                        their source of capital to commence business irrespective of the
+                        amount of pledges. Failure to comply with system amendments/changes
+                        will result in account termination and legal sanction.
                     </li>
-                    <li class="rule">Please make sure you have the amount that you are
-                    pledging. Your account will be banned if the person you
-                    are to pay to doesn't get payment and decides to purge you.
-                    </li>
-                    <li class="rule">If you don't confirm someone immediately when you receive their
-                    payment, your account will be deleted and banned.
+                    <li class="rule">Any amount pledged will be doubled within 3 days (72 hours).
+                        Each member is to pay an amount of 15.00 before pledges to mtn number
+                        0548045219 (C-CLICK VENTURES).
                     </li>
                 </ol>
-            </div>
-            <div class="notice">
-                <h3>NOTICE</h3>
-                <h4>Matching is ongoig now, please for every pledge, pay
-                your GHC 15.00 to the merchant account number:
-                0549643215 (FAF Logistics). Your account will be blocked if you
-                pledge without paying your GHC 15.00</h4>
             </div>
         </article>
         <article class="pledge">
             <div class="tooltab">
                 <img class="pageimg" src="static/images/pledge.png"/>
                 <h4>Pledge</h4>
-                <img class="close" src="static/images/back.png"/>
             </div>
             <div class="pledger">
-                <h3>How much do you want to pledge?</h3>
+                <h5>How much do you want to pledge?</h5>
                 <select onchange="cal_reward()">
-                    <option selected>Please select amount.</option>
-                    <option>GHC 20.00</option>
-                    <option>GHC 50.00</option>
-                    <option>GHC 80.00</option>
-                    <option>GHC 100.00</option>
+                    <option selected>Please select amount</option>
+                    <option>GH&cent; 20.00</option>
+                    <option>GH&cent; 30.00</option>
+                    <option>GH&cent; 40.00</option>
+                    <option>GH&cent; 50.00</option>
+                    <option>GH&cent; 60.00</option>
                 </select>
                 <input type="button" value="Pledge" class="pledge-button"/>
                 <div class="reward">Reward:<span></span></div>
-                <div class="paymentid">
-                PayID:<span id="payid">#24244</span>
+                <div class="pledge-pending" data-action="">
+                    <h5>Pending Pledge</h5>
+                    <ul class="pledge-timer">
+                        <li class="image"><img src="static/images/notexpired.gif"/></li>
+                        <li class="pend"></li>
+                        <li class="timer"></li>
+                    </ul>
                 </div>
-                <div id="pledgers">You do not have any pledgers now.
-                Click on the pledge button above to pledge.</div>
+                <div class="pledges">
+                    <h5>Pledges</h5>
+
+                </div>
             </div>
         </article>
         <article class="payment">
             <div class="tooltab">
                 <img class="pageimg" src="static/images/payment.png"/>
                 <h4>Payment</h4>
-                <img class="close" src="static/images/back.png"/>
             </div>
-            <h5 class="pending">Pending Pledge: <span>GHC 0.00</span></h5>
-            <div class="confirm">
+            <h5>Pending Payment: <span class="pend-pay">GH&cent; 0.00</span></h5>
+           <!-- <div class="confirm">
                 Please select an amount and click on the confirm
-                button below to acknowledge receipt of that amount selected
-                or click on the purge button to purge a user for failing to honor
-                his/her pledge.
+                button below to acknowledge receipt of that amount selected.
             </div>
                         <select class="received">
-                <option selected>GH20.00</option>
-                <option>GH50.00</option>
-                <option>GH80.00</option>
-                <option>GH100.00</option>
+                <option selected>GH&cent; 45.00</option>
+                <option>GH&cent; 55.00</option>
+                <option>GH&cent; 65.00</option>
+                <option>GH&cent; 75.00</option>
+                <option>GH&cent; 85.00</option>
+                <option>GH&cent; 95.00</option>
             </select>
             <input class="transact" placeholder="Transaction Number" type="tel"/>
-            <input type="button" class="confirm-button" value="Confirm"/>
+            <input type="button" class="confirm-button" value="Confirm"/> -->
+            <table class="payouts">
+                <tr>
+                    <th>Payout</th>
+                    <th>Pledge</th>
+                    <th>Date</th>
+                </tr>
+            </table>
+        </article>
+        <article class="help">
+            <div class="tooltab">
+                <img class="pageimg" src="static/images/help.png"/>
+                <h4>help</h4>
+            </div>
+            <h5>CUSTOMER SERVICE</h5>
+            <div class="help-box">
+                <label for="issue">Issue:</label>
+                <textarea class="issue" id="issue" placeholder="Type your complaints and suggestions here"></textarea>
+                <input type="button" class="complain-button" value="Send"/>
+            </div><br><br><br>
         </article>
     </section>
+    <nav>
+        <div class="tab current_tab" data-action="home">
+            <img class="tabimg" src="static/images/home.png"/>
+        </div>
+        <div class="tab" data-action="pledge">
+            <img class="tabimg" src="static/images/pledge.png"/>
+        </div>
+        <div class="tab" data-action="payment">
+            <img class="tabimg" src="static/images/payment.png"/>
+        </div>
+        <div class="tab" data-action="help">
+            <img class="tabimg" src="static/images/help.png"/>
+        </div>
+    </nav>
+    <div class="loader-page">
+        <img class="loading" src="static/images/loadingAnimation.gif"/>
+    </div>
 </body>
 </html>

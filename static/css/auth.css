@@ -1,15 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 html {
+    width: 100%;
+    height: 100%;
     font-size: 16px;
-    background: #dadada;
+    background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%);
 }
 
 header {
-    width: 20%;
+    width: 30%;
     display: block;
     margin: 10% auto;
 }
@@ -18,13 +20,14 @@ header h2 {
     text-transform: uppercase;
     font-family: monospace;
     font-size: 1em;
-    color: #38ad32;
+    color: brown;
     text-align: center;
 }
 
 img.app-icon {
-    width: 100%;
+    width: 90%;
     height: auto;
+    filter: invert(90%);
 }
 
 article {
@@ -33,50 +36,59 @@ article {
     margin: 1% auto;
 }
 
+article.loader-page {
+    margin: 20% auto;
+}
+
+img.loading {
+    display: block;
+    margin: 0px auto;
+}
+
 article.login-page {
     margin: 2% auto;
+    background: rgba(0,0,0,0.1);
 }
 
 input {
-    margin: 2% 0;
     font-weight: bold;
     font-size: 1rem;
     border: none;
+    background: transparent;
+    border-bottom: 1px solid #aaa;
 }
 
 input[type='tel'], input[type='password'], input[type='button'], input[type='text'] {
     width: 100%;
     padding: 15px 0;
     text-align: center;
+    color: black;
 }
 
-.login-button {
-    background: #4CAF50;
-    color: white;
+input[type='button'] {
+    cursor: pointer;
     text-transform: uppercase;
+    color: white;
 }
 
-.login-button:hover {
-    background: white;
-    border: 2px solid #4CAF50;
-    color: #4CAF50;
+input[type='button']:hover {
+    background: rgba(255,255,255,0.5);
 }
 
 article h3 {
     font-size: 1rem;
     padding: 5px;
+    color: blue;
 }
 
-.register-button {
-    background: #008CBA;
+article h3 a {
     color: white;
-    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.register-button:hover {
-    background: white;
-    color: #008CBA;
-    border: 2px solid #008CBA;
+article.register-page {
+    background: rgba(0,0,0,0.1);
 }
 
 article h4 {
@@ -85,4 +97,20 @@ article h4 {
     padding: 5px;
     text-align: center;
     font-family: monospace;
+}
+
+div.loader-page {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    background: white;
+    z-index: 999999;
+    box-shadow: 1px 1px 1px grey;
+}
+
+img.loading {
+    display: block;
+    padding: 15px;
 }
